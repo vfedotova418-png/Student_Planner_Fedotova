@@ -9,6 +9,6 @@ sealed class Screen(val route: String) {
     object Settings : Screen("settings")
     object Schedule : Screen("schedule")
     object ScheduleDetails : Screen("schedule_details/{scheduleId}") {
-        fun createRoute(scheduleId: String) = "shedule_details/$scheduleId"
+        fun createRoute(scheduleId: String) = "schedule_details/$scheduleId"
     }
 }

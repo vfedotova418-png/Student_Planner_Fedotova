@@ -32,7 +32,7 @@ import com.fedotova.studentplanner.data.ScheduleItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ScheduleDetailScreen(
+fun ScheduleDetailsScreen(
     scheduleItem: ScheduleItem,
     onNavigateBack: () -> Unit,
     modifier: Modifier = Modifier

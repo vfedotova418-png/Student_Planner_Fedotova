@@ -7,6 +7,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.fedotova.studentplanner.data.sampleSchedule
 import com.fedotova.studentplanner.ui_model.*
 
 @Composable
@@ -64,6 +65,32 @@ fun StudentPlannerNavHost(
                     navController.popBackStack()
                 }
             )
+        }
+        composable(route = Screen.Schedule.route) {
+            ScheduleScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onItemClick = { schedule ->
+                    navController.navigate(Screen.ScheduleDetails.createRoute(schedule.id))
+                }
+            )
+        }
+
+        composable(
+            route = Screen.ScheduleDetails.route,
+            arguments = listOf(
+                navArgument("scheduleId") { type = NavType.StringType }
+            )
+        ) { backStackEntry ->
+            val scheduleId = backStackEntry.arguments?.getString("scheduleId")
+            val schedule = sampleSchedule.find { it.id == scheduleId }
+            if (schedule != null) {
+                ScheduleDetailsScreen(
+                    scheduleItem = schedule,
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            } else {
+                navController.popBackStack()
+            }
         }
     }
 }

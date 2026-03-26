@@ -18,6 +18,8 @@
 - Детали дисциплины
 - Профиль студента
 - Настройки
+- Расписание на неделю
+- Детали занятия
 
 ## Используемые технологии
 
@@ -35,10 +37,12 @@
 
 ## Скриншоты
 
-![Главный экран](app/img/step7_navigation_working_Fedotova_1.png)
-![Экран деталей](app/img/step7_navigation_working_Fedotova_2.png)
-![Экран профиля](app/img/step7_navigation_working_Fedotova_3.png)
+![Главный экран](app/img/step7_navigation_working_Fedotova_home.png)
+![Экран деталей дисциплины](app/img/step7_navigation_working_Fedotova_details.png)
+![Экран профиля](app/img/step7_navigation_working_Fedotova_profile.png)
 ![Экран настроек](app/img/step7_navigation_working_Fedotova_4.png)
+![Экран расписания](app/img/step7_navigation_working_Fedotova_schedule.png)
+![Экран деталей занятия](app/img/step7_navigation_working_Fedotova_schedule_details.png)
 
 ## Контрольные вопросы
 
