@@ -30,6 +30,9 @@ fun StudentPlannerNavHost(
                 onSettingsClick = {
                     navController.navigate(Screen.Settings.route)
                 },
+                onScheduleClick = {
+                    navController.navigate(Screen.Schedule.route)
+                }
             )
         }
         composable(
