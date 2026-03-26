@@ -84,6 +84,7 @@ fun HomeScreen(
     onSubjectClick: (String) -> Unit,
     onProfileClick: () -> Unit,
     onSettingsClick: () -> Unit,
+    onScheduleClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -91,6 +92,12 @@ fun HomeScreen(
             TopAppBar(
                 title = { Text("Мои дисциплины") },
                 actions = {
+                    IconButton(onClick = onScheduleClick) {
+                        Icon(
+                            imageVector = Icons.Default.DateRange,
+                            contentDescription = "Расписание"
+                        )
+                    }
                     IconButton(onClick = onProfileClick) {
                         Icon(
                             imageVector = Icons.Default.Person,
