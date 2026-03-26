@@ -20,11 +20,11 @@ val sampleSubjects = listOf(
     ),
     Subject(
         id = "2",
-        name = "Разработка мобильных приложений",
+        name = "Инструментальные средства разработки программного обеспечения",
         professor = "Леонтьев Д.А.",
         credits = 78,
         currentGrade = "Хорошо",
-        description = ""
+        description = "Fullstack разрабокта в Visual Studio Code, работа с Git и GitHub"
     ),
     Subject(
         id = "3",
@@ -40,7 +40,7 @@ val sampleSubjects = listOf(
         professor = "Донскова Д.А.",
         credits = 89,
         currentGrade = "Хорошо",
-        description = ""
+        description = "Работа с WPF, архитектурой приложений, в Visual Studio"
     ),
     Subject(
         id = "5",
@@ -48,7 +48,7 @@ val sampleSubjects = listOf(
         professor = "Ушакова М.А.",
         credits = 76,
         currentGrade = "Хорошо",
-        description = ""
+        description = "Изучение основ обеспечения качества функционированния компьютерных систем"
     ),
     Subject(
         id = "6",
@@ -56,6 +56,38 @@ val sampleSubjects = listOf(
         professor = "Трошина О.В.",
         credits = 91,
         currentGrade = "Отлично",
-        description = ""
+        description = "Работа в Microsoft Project для разработки плана строительства Коттеджа"
+    ),
+    Subject(
+        id = "7",
+        name = "Иностранный язык в профессиональной деятельности",
+        professor = "Пенькова О.В.",
+        credits = 91,
+        currentGrade = "Отлично",
+        description = "Изучение английского языка, применимого в сфере IT"
+    ),
+    Subject(
+        id = "8",
+        name = "Физическая культура",
+        professor = "Магомедов С.К.",
+        credits = 71,
+        currentGrade = "Хорошо",
+        description = "Дисциплина нацеленная на поддержание уровня физической активности студентов"
+    ),
+    Subject(
+        id = "9",
+        name = "Менеджмент в профессиональной деятельности",
+        professor = "Запорожская С.А.",
+        credits = 71,
+        currentGrade = "Хорошо",
+        description = "Основы менеджмента и управления как наука"
+    ),
+    Subject(
+        id = "10",
+        name = "Математическое моделирование",
+        professor = "Трошина О.В.",
+        credits = 91,
+        currentGrade = "Отлично",
+        description = "Изучение математических моделей"
     )
 )

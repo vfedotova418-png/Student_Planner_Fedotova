@@ -41,7 +41,7 @@ fun ProfileScreen(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-// Карточка с аватаром и именем
+
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 colors = CardDefaults.cardColors(
@@ -62,18 +62,18 @@ fun ProfileScreen(
                     )
                     Spacer(modifier = Modifier.height(16.dp))
                     Text(
-                        text = "Иванов Иван Иванович",
+                        text = "Федотова Виктория Сергеевна",
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold
                     )
                     Text(
-                        text = "Группа: ИСП-234",
+                        text = "Группа: ИСП-232",
                         style = MaterialTheme.typography.titleMedium,
                         color = MaterialTheme.colorScheme.onPrimaryContainer
                     )
                 }
             }
-// Информация о студенте
+
             Card(modifier = Modifier.fillMaxWidth()) {
                 Column(
                     modifier = Modifier.padding(16.dp),
@@ -88,7 +88,7 @@ fun ProfileScreen(
                     ProfileInfoRow(
                         icon = Icons.Default.Email,
                         label = "Email",
-                        value = "ivanov@vgi.volsu.ru"
+                        value = "fedotova@vgi.volsu.ru"
                     )
                     HorizontalDivider()
                     ProfileInfoRow(
@@ -98,7 +98,7 @@ fun ProfileScreen(
                     )
                 }
             }
-// Статистика
+
             Card(modifier = Modifier.fillMaxWidth()) {
                 Column(
                     modifier = Modifier.padding(16.dp)
@@ -123,7 +123,7 @@ fun ProfileScreen(
                         )
                         StatisticItem(
                             label = "Дисциплин",
-                            value = "20"
+                            value = "10"
                         )
                     }
                 }
